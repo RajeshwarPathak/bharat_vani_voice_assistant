@@ -100,22 +100,7 @@ export default function App() {
     try {
       const saved = localStorage.getItem("bharat_vani_profiles");
       if (saved) {
-        const parsed: UserProfile[] = JSON.parse(saved);
-        const cleaned = parsed.map((p) => {
-          if (p.id === "profile-baby-pathak") {
-            return {
-              ...p,
-              id: "profile-user",
-              name: "User",
-              greeting: "Namaste! Ready for your voice commands.",
-              customCommands: (p.customCommands || []).filter(
-                (c) => c.phrase.toLowerCase() !== p.name.toLowerCase()
-              ),
-            };
-          }
-          return p;
-        });
-        return cleaned;
+        return JSON.parse(saved);
       }
     } catch {
       // Ignore
@@ -127,7 +112,6 @@ export default function App() {
     try {
       const saved = localStorage.getItem("bharat_vani_active_profile_id");
       if (saved) {
-        if (saved === "profile-baby-pathak") return "profile-user";
         return saved;
       }
     } catch {
