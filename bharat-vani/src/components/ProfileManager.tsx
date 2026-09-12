@@ -97,7 +97,7 @@ export const ProfileManager: React.FC<ProfileManagerProps> = ({
       speechPitch: 1.0,
       defaultBrainMode: "gemini",
       greeting: "Namaste! Welcome back.",
-      city: "New Delhi, India",
+      city: "Location not set",
       customCommands: [
         {
           id: `cmd-${Date.now()}`,

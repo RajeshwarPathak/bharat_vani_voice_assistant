@@ -36,7 +36,7 @@ If you are browsing or working on the web and want Bharat Vani docked right next
 2. Toggle ON **Developer mode** (top-right).
 3. Click **"Load unpacked"** and select the folder:
    ```
-   e:\bharat_vani_voice_assistant\bharat-vani\extension
+   the `extension` folder inside the extracted Bharat Vani project
    ```
 4. Press **`Ctrl + Shift + V`** to toggle the Side Panel on any website!
 5. Highlight any text on any webpage, right-click, and choose *"Ask Bharat Vani"*.

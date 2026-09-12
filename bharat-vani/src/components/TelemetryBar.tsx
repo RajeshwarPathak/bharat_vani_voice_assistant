@@ -65,7 +65,7 @@ export const TelemetryBar: React.FC<TelemetryBarProps> = ({
             <Laptop className="w-3.5 h-3.5 text-sky-400" />
             <span className="font-semibold text-slate-200">Windows 11 Pro</span>
             <span className="text-slate-500">|</span>
-            <span className="font-mono text-[11px] text-amber-400 font-bold">BHARAT-PC</span>
+            <span className="font-mono text-[11px] text-amber-400 font-bold">{telemetry.pcName}</span>
           </div>
 
           <div className="hidden sm:flex items-center gap-1 text-slate-400 font-mono text-[11px]">

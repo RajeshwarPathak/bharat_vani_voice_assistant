@@ -37,9 +37,9 @@ export const PythonProjectExplorer: React.FC = () => {
 Directly controls your Windows PC, speaks Indian English, and is powered by Google Gemini AI!
 
 ## 📁 Installation & Run (on Windows)
-Target location: e:\\New folder\\
+Target location: your chosen installation folder
 
-1. Extract all files into your folder (e.g. \`e:\\New folder\\\`).
+1. Extract all files into your chosen folder.
 2. Make sure Python 3.10+ is installed on your Windows PC.
 3. Double-click \`run.bat\` OR run in Terminal:
    \`\`\`bash
@@ -83,7 +83,7 @@ Target location: e:\\New folder\\
         <div className="flex items-center gap-2">
           <Terminal className="w-4 h-4 text-amber-400" />
           <h2 className="text-xs font-bold uppercase tracking-wider text-slate-200 font-mono">
-            Windows Source Code Explorer (`e:\New folder\`)
+            Windows Source Code Explorer (chosen installation folder)
           </h2>
           <span className="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700 font-mono">
             600+ Lines Python
@@ -145,7 +145,7 @@ Target location: e:\\New folder\\
               <span>How To Run on Windows</span>
             </div>
             <p className="text-[10px] text-slate-400 leading-normal">
-              1. Download ZIP & extract to <code className="text-amber-300">e:\New folder\</code>
+              1. Download ZIP and extract it to your chosen folder.
             </p>
             <p className="text-[10px] text-slate-400 leading-normal">
               2. Double click <code className="text-amber-300">run.bat</code>

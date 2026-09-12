@@ -11,7 +11,7 @@ export const DEFAULT_PROFILES: UserProfile[] = [
     speechPitch: 1.05,
     defaultBrainMode: "gemini",
     greeting: "Namaste! Ready for your voice commands.",
-    city: "New Delhi, India",
+    city: "Location not set",
     customCommands: [
       {
         id: "cmd-chai-break",
@@ -53,7 +53,7 @@ export const DEFAULT_PROFILES: UserProfile[] = [
     speechPitch: 1.0,
     defaultBrainMode: "gemini",
     greeting: "Good day! Windows productivity workstation ready.",
-    city: "Bengaluru, India",
+    city: "Location not set",
     customCommands: [
       {
         id: "cmd-daily-standup",
@@ -83,7 +83,7 @@ export const DEFAULT_PROFILES: UserProfile[] = [
     speechPitch: 1.05,
     defaultBrainMode: "gemini",
     greeting: "नमस्ते! भारत वानी आपकी सेवा में हाज़िर है।",
-    city: "Varanasi, India",
+    city: "Location not set",
     customCommands: [
       {
         id: "cmd-morning-bhajan",

@@ -17,7 +17,7 @@ Access **Bharat Vani AI** directly from any webpage in your browser's **Side Pan
 - Click the **"Load unpacked"** button in the top-left.
 - Select this folder:
   ```
-  e:\bharat_vani_voice_assistant\bharat-vani\extension
+  the `extension` folder inside the extracted Bharat Vani project
   ```
 
 🎉 **That's it!** The Bharat Vani logo will appear in your browser toolbar.

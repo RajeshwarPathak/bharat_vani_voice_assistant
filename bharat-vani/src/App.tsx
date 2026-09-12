@@ -250,7 +250,7 @@ export default function App() {
     battery: 92,
     isCharging: true,
     os: "Windows 11 Pro 64-bit",
-    pcName: "BHARAT-PC",
+    pcName: "This PC",
     latency: 28,
     volume: 85,
     isMuted: false,

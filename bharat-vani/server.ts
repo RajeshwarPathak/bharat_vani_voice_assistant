@@ -5,6 +5,7 @@ import express from "express";
 import path from "path";
 import http from "http";
 import fs from "fs";
+import os from "os";
 import { spawn } from "child_process";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
@@ -37,13 +38,13 @@ function getGeminiClient(): GoogleGenAI {
 app.get("/api/system/status", (req, res) => {
   res.json({
     status: "online",
-    os: "Windows 11 Pro 64-bit (Build 22631)",
-    pcName: "BHARAT-DESKTOP",
+    os: `${process.platform} ${os.arch()} (${os.release()})`,
+    pcName: os.hostname(),
     geminiConfigured: Boolean(process.env.GEMINI_API_KEY),
     defaultWakeWord: "Hey Vani",
     supportedWakeWords: ["Hey Vani", "Ok Vani", "Namaste Vani"],
     voiceLocale: "en-IN",
-    location: "India (IST, UTC+5:30)",
+    location: "Not configured",
   });
 });
 
