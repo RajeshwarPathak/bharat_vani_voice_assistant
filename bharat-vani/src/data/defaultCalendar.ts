@@ -69,7 +69,7 @@ export const INITIAL_REMINDERS: ReminderItem[] = [
   },
   {
     id: "rem-3",
-    text: "Backup Bharat Vani code from e:\\New folder\\",
+    text: "Back up Bharat Vani code from the project folder",
     date: getTomorrowDateStr(),
     time: "18:00",
     status: "pending",

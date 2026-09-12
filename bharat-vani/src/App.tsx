@@ -101,16 +101,15 @@ export default function App() {
       const saved = localStorage.getItem("bharat_vani_profiles");
       if (saved) {
         const parsed: UserProfile[] = JSON.parse(saved);
-        // Clean out any legacy auto-injected names like "Baby Pathak"
         const cleaned = parsed.map((p) => {
-          if (p.name === "Baby Pathak" || p.id === "profile-baby-pathak") {
+          if (p.id === "profile-baby-pathak") {
             return {
               ...p,
               id: "profile-user",
               name: "User",
               greeting: "Namaste! Ready for your voice commands.",
               customCommands: (p.customCommands || []).filter(
-                (c) => !c.phrase.toLowerCase().includes("baby pathak")
+                (c) => c.phrase.toLowerCase() !== p.name.toLowerCase()
               ),
             };
           }
