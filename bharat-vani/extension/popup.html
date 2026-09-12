@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bharat Vani Quick Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="popup-card">
+    <div class="tricolor-strip"></div>
+    
+    <div class="header">
+      <div class="brand">
+        <img src="icons/icon48.png" alt="Logo" class="logo">
+        <div>
+          <div class="title">Bharat Vani AI</div>
+          <div class="status" id="popStatus">Connecting...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Voice Action -->
+    <div class="voice-section">
+      <button class="big-mic" id="popMic" title="Click to speak">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+          <line x1="12" y1="19" x2="12" y2="23"></line>
+          <line x1="8" y1="23" x2="16" y2="23"></line>
+        </svg>
+      </button>
+      <div class="voice-hint" id="popVoiceHint">Tap mic to speak to Vani</div>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button class="action-btn primary" id="popOpenSidePanel">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="15" y1="3" x2="15" y2="21"></line>
+        </svg>
+        <span>Open Side Panel</span>
+        <span class="kbd">Alt+V</span>
+      </button>
+
+      <button class="action-btn secondary" id="popOpenDesktop">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        <span>Open Full Window</span>
+      </button>
+    </div>
+
+    <!-- Response Preview -->
+    <div class="response-box" id="popResponseBox" style="display: none;">
+      <div class="response-title">Vani says:</div>
+      <div class="response-text" id="popResponseText"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

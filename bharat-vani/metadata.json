@@ -1,0 +1,11 @@
+{
+  "name": "Bharat Vani",
+  "description": "AI voice assistant for Windows with single-click animated floating icon conversion, system turn-on auto-start, live screen & camera vision, select & search with shortcuts (Alt+S, Alt+M), personalized profiles, calendar & voice reminders, and multi-language support (Hindi, English, Hinglish).",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
